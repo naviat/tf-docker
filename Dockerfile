@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM --platform=linux/amd64 alpine:3.14
 ARG TERRAFORM_VERSION=1.1.7
 ARG TFSEC_VERSION=1.13.0
 RUN apk add --no-cache --virtual .sig-check gnupg
